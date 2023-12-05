@@ -13,11 +13,13 @@ class RestaurantController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    //店舗一覧のページに情報を渡すアクション
     public function index()
-    {
-        $restaurants = restaurant::all();
+    {   //restaurantsテーブルのデータ（全カラム）を取得し、↓のcompactでindex.blade.phpに渡す
+        $restaurants = restaurant::all();  
  
-        return view('restaurants.index', compact('restaurants'));
+        return view('restaurants.index', compact('restaurants')); 
     }
 
     /**
