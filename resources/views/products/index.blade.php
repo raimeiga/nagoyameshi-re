@@ -1,6 +1,5 @@
 <!-- 店舗一覧ページ -->
-<a href="{{ route('restaurants.create') }}"> 新規店舗登録</a>
- 
+<a href="{{ route('restaurants.create') }}"> Create New Restaurant</a> 
  <table>
      <tr>
          <th>Name</th>
